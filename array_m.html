@@ -1,0 +1,102 @@
+<!DOCTYPE html>	
+<html lang="es">
+	<head>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			body{
+				margin: auto;
+				text-align: center;
+				background-color: grey;
+
+			}
+			header{
+				background-color: crimson;
+				padding-top: 1px;
+				padding-bottom: 1px;
+				border-bottom: 20px;
+			}
+			.art{
+				text-align: left;
+				width: 70%;
+				margin: auto;
+				font-size: 20px;
+				background-color: aqua;
+				padding: 5px;
+				padding-left: 30px;
+				border-top: 10px;
+				
+			}
+			.art h3{
+				text-align: center;
+			}
+			.art .p {
+				background-color: grey;
+				color: white;
+				padding: 2px;
+				width: 70%;
+				border-radius:10px;
+				padding-left: 10px;
+			}
+		</style>
+		<title>8 Must know Javascript array methods</title>
+	</head>
+	<body>
+		<header>
+			<h1>8 Must know Javascript array methods</h1>
+			<h2>By: Web dev simplified</h2>
+		</header>
+			<br><br>
+			<div>
+				<article class="art">
+					<h3>1. Buscar varios items bajo una condición</h3>
+					<p>En esta lista hay varios objetos</p>
+					<p class="p">
+						const items = [
+						<br> {name: 'Bike', price: 100},
+						<br> {name: 'TV', price: 200}
+					<br>];
+					</p>
+
+					<p>
+						Para saber si algun item del array obedece alguna <strong>condicion</strong> en especifico se puede utilizar:
+					</p>
+					<p class="p">
+						const filteredItems = items.filter((item)=> {
+						<br>return item.price <=100;<br>
+						});
+					</p>
+				
+
+				<p>Para <strong>mostrar esta informacion en consola:</strong>
+					<p class="p">console.log(filteredItems)</p>
+				</p>
+				</article>
+				<br><br>
+				<article class="art">
+					<h3>En esta lista hay varios objetos</h3>
+					
+					<p class="p">
+						const items = [
+						<br> {name: 'Bike', price: 100},
+						<br> {name: 'TV', price: 200}
+					<br>];
+					</p>
+
+					<p>
+						Para saber si algun item del array obedece alguna <strong>condicion</strong> en especifico se puede utilizar:
+					</p>
+					<p class="p">
+						const filteredItems = items.filter((item)=> {
+						<br>return item.price <=100;<br>
+						});
+					</p>
+				
+
+				<p>Para <strong>mostrar esta informacion en consola:</strong>
+					<p class="p">console.log(filteredItems)</p>
+				</p>
+				</article><br><br>
+			</div>
+	</body>
+</html>
