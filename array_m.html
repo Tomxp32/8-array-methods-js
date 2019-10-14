@@ -42,6 +42,36 @@
 		<title>8 Must know Javascript array methods</title>
 	</head>
 	<body>
+		<script type="text/javascript">
+			const items = [
+				{name: 'Bike', price: 100, lot: 1},
+				{name: 'TV', price: 200, lot: 0},
+				{name: 'Mate 20', price: 299, lot: 2},
+				{name: 'Mouse', price: 15, lot: 11}
+			];
+			const filteredItems = items.filter((items)=>{
+				return items.lot <= 10;
+			});
+			console.log(filteredItems);
+		</script>
+
+		<script type="text/javascript">
+			
+			const albums = [
+				{albums: 'In the court of the crimson king', year: 1969},
+				{albums: 'Led Zeppelin IV', year: 1971},
+				{albums: 'Dark side of the moon', year: 1973},
+				{albums: "Let's dance", year: 1983},
+				{albums: "Kill'em all", year: 1983}
+			];
+			const albumsFilter = albums.filter((albums) =>{
+				return albums.year <= 1980;
+
+			});
+			console.log(albumsFilter);
+			console.log(albums);
+		</script>
+
 		<header>
 			<h1>8 Must know Javascript array methods</h1>
 			<h2>By: Web dev simplified</h2>
@@ -49,7 +79,7 @@
 			<br><br>
 			<div>
 				<article class="art">
-					<h3>1. Buscar varios items bajo una condición</h3>
+					<h3><a href="JS/javacript.html">1</a>. Buscar varios items bajo una condición</h3>
 					<p>En esta lista hay varios objetos</p>
 					<p class="p">
 						const items = [
@@ -62,39 +92,42 @@
 						Para saber si algun item del array obedece alguna <strong>condicion</strong> en especifico se puede utilizar:
 					</p>
 					<p class="p">
-						const filteredItems = items.filter((item)=> {
-						<br>return item.price <=100;<br>
+						const filteredItems = items.filter((items)=> {
+						<br>return items.price <=100;<br>
 						});
 					</p>
 				
 
 				<p>Para <strong>mostrar esta informacion en consola:</strong>
-					<p class="p">console.log(filteredItems)</p>
+					<p class="p">console.log(filteredItems);</p>
 				</p>
 				</article>
 				<br><br>
 				<article class="art">
-					<h3>En esta lista hay varios objetos</h3>
-					
+					<h3>2. Map</h3>
+					<p>
+						Sirve para convertir un array completo, en uno mas simple con todos los <strong>valores</strong> de una clave específia.
+					</p>
 					<p class="p">
-						const items = [
-						<br> {name: 'Bike', price: 100},
-						<br> {name: 'TV', price: 200}
+						const paises = [
+						<br> {pais: 'España', capital: 'Madrid'},
+						<br> {pais: 'E.E.U.U', capital: 'Washington'},
+						<br> {pais: 'Alemania', capital: 'Berlin'}
 					<br>];
 					</p>
 
 					<p>
-						Para saber si algun item del array obedece alguna <strong>condicion</strong> en especifico se puede utilizar:
+						
 					</p>
 					<p class="p">
-						const filteredItems = items.filter((item)=> {
-						<br>return item.price <=100;<br>
+						const paisesCapital = paises.map((paises)=> {
+						<br>return paises.capital;<br>
 						});
 					</p>
 				
 
 				<p>Para <strong>mostrar esta informacion en consola:</strong>
-					<p class="p">console.log(filteredItems)</p>
+					<p class="p">console.log(paisesCapital)</p>
 				</p>
 				</article><br><br>
 			</div>
